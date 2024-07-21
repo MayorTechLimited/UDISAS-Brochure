@@ -1,5 +1,36 @@
-{% extends "_base.html" %}
-{% block content %}
+<!DOCTYPE html>
+<html lang="en" class="h-full bg-slate-50">
+<head>
+    <title>UDISAS - Assess Adapt Achieve</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+</head>
+
+<body class="flex flex-col h-full">
+    <header class="px-4 py-6 mb-8">
+        <div class="max-w-3xl mx-auto flex flex-col md:flex-row flex-wrap gap-4 md:items-center">
+            <div class="flex flex-row items-baseline">
+                <a class="" href="/">
+                    <img src="/images/logo.png" alt="The UDISAS logo. The word UDISAS with a stylised A character." width="200">
+                </a>
+            </div>
+            <nav class="flex-grow text-2xl">
+                <ul class="flex flex-row gap-4 md:justify-end">
+                    <li class=""><a class="text-udblue border-b-2 border-b-transparent hover:border-b-udblue" href="/about/">About</a></li>
+                    <li class=""><a class="text-udblue border-b-2 border-b-transparent hover:border-b-udblue" href="/contact/">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="max-w-3xl mx-auto mt-2">
+
+        </div>
+    </header>
+    <main class="grow">
 <div class="max-w-4xl mx-auto px-2">
     <h1 class="sr-only">About</h1>
     <h2 class="text-udblue md:text-center uppercase text-6xl mb-4 font-bold">Our Story</h2>
@@ -38,4 +69,29 @@
         </div>
     </div>
 </div>
-{% endblock content %}
+</main>
+    <footer class="p-4 mt-8">
+        <p class="text-center text-lg mb-4">Assess Adapt Achieve</p>
+        <div class="max-w-3xl mx-auto flex flex-col md:flex-row flex-wrap gap-4 md:items-center">
+            <div class="">
+                <a class="" href="/">
+                    <img src="/images/logo.png" alt="The UDISAS logo. The word UDISAS with a stylised A character." width="200">
+                </a>
+            </div>
+            <nav class="flex-grow">
+                <ul class="flex flex-row gap-4 md:justify-end">
+                    <li class=""><a class="text-udblue border-b-2 border-b-transparent hover:border-b-udblue" href="/about/">About</a></li>
+                    <li class=""><a class="text-udblue border-b-2 border-b-transparent hover:border-b-udblue" href="/contact/">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="text-center mt-2 text-sm">
+            <a href="/privacy/" class="text-udblue border-b-2 border-b-transparent hover:border-b-udblue">Privacy Notice</a>
+        </div>
+        <div class="text-center text-sm mt-2">
+            &copy; UDISAS 2022-2024
+        </div>
+    </footer>
+</body>
+
+</html>
