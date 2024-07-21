@@ -13,7 +13,7 @@ staticjinja build --srcpath ./src/templates --outpath ./dist
 cp -r src/images dist/
 tailwindcss -i ./src/styles.css -o ./dist/styles.css --minify
 
-ghp-import dist --branch=main --cname=udisas-brochure.mayortech.co.uk
+ghp-import dist --branch=main --cname=www.udisas.com
 
 git checkout main
 git push origin main
