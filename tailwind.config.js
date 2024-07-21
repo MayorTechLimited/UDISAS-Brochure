@@ -8,6 +8,7 @@ module.exports = {
             colors: {
                 udblue: "#274A75",
                 udlightblue: "#30E7EF",
+                udyellow: "#fcd34d"
             }
         },
     },
