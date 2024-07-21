@@ -1,0 +1,49 @@
+{% extends "_base.html" %}
+{% block content %}
+    <div class="max-w-4xl mx-auto p-2">
+        <h1 class="text-udblue md:text-center uppercase text-6xl mb-8 font-bold">Get in touch</h1>
+
+        <p class="md:text-center text-2xl text-gray-600">To arrange a demo of the prototype or to find out more about how UDISAS could benefit your organisation, please get in touch via the form below. Alternatively, you can email <a href="mailto:robin@udisas.com" class="font-semibold text-udblue hover:underline">robin@udisas.com</a>.</p>
+
+        <p class="md:text-center text-2xl text-gray-600 mt-8">We aim to reply to all emails within 48 hours.</p>
+
+        <form action="https://formspree.io/f/xjkbgkrr" method="POST" class="mx-auto mt-16 max-w-xl sm:mt-20">
+            <div class="flex flex-col gap-4">
+              <div class="">
+                <label for="name" class="block text-sm font-semibold leading-6 text-gray-600">Name</label>
+                <div class="mt-1">
+                  <input type="text" name="name" id="name" autocomplete="name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-600 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-udblue sm:text-sm sm:leading-6">
+                </div>
+              </div>
+              <div class="">
+                <label for="email" class="block text-sm font-semibold leading-6 text-gray-600">Email</label>
+                <div class="mt-1">
+                  <input required type="email" name="email" id="email" autocomplete="email" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-600 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-udblue sm:text-sm sm:leading-6">
+                </div>
+              </div>
+              <div class="">
+                <label for="company" class="block text-sm font-semibold leading-6 text-gray-600">Company</label>
+                <div class="mt-1">
+                  <input type="text" name="company" id="company" autocomplete="organization" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-600 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-udblue sm:text-sm sm:leading-6">
+                </div>
+              </div>
+              <div class="">
+                <label for="message" class="block text-sm font-semibold leading-6 text-gray-600">Message</label>
+                <div class="mt-1">
+                  <textarea required name="message" id="message" rows="4" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-600 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-udblue sm:text-sm sm:leading-6"></textarea>
+                </div>
+              </div>
+              <div class="flex gap-x-4">
+                <label class="text-sm leading-6 text-gray-600" id="switch-1-label">
+                    <input type="checkbox" name="agree-privacy" required class="accent-udblue">
+                    By selecting this, you agree to our
+                    <a href="/privacy/" class="font-semibold text-udblue hover:underline">privacy&nbsp;policy</a>.
+                </label>
+              </div>
+            </div>
+            <div class="mt-10">
+              <button type="submit" class="block w-full rounded-md bg-udblue px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-udlightblue focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-udblue">Submit</button>
+            </div>
+          </form>
+    </div>
+{% endblock content %}
