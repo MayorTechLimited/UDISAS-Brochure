@@ -3,3 +3,4 @@ dist/
 venv/
 .vantage
 .DS_Store
+.zed/
